@@ -81,7 +81,10 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand-lockup" href="#top" aria-label="TIANYU2FM Skill Index 首页">
-          <span className="brand-mark">T2</span>
+          <span className="brand-mark">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/t2fm-silhouette-favicon.png" alt="" width="40" height="40" />
+          </span>
           <span><strong>TIANYU2FM</strong><small>SKILL INDEX / 2026</small></span>
         </a>
         <nav aria-label="主导航">
@@ -92,32 +95,19 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow"><span /> OPEN-SOURCE PODCAST TOOLKIT</p>
-            <h1>把一场对谈，<em>变成一套内容系统。</em></h1>
-            <p className="hero-lede">从读完嘉宾的书，到找到片头金句、完成多机位粗剪、补齐 B-roll，再为整期节目写下一个值得点击的标题。</p>
-            <div className="hero-actions">
-              <a className="primary-button" href="#skills">进入 Skill Index ↓</a>
-              <a className="text-link" href={repoUrl} target="_blank" rel="noreferrer">查看公开仓库 ↗</a>
-            </div>
-          </div>
-          <div className="hero-art" aria-label="TIANYU2FM 主播人物插画">
-            <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-            <div className="signal-label signal-a">REC · 00:48:16</div>
-            <div className="signal-label signal-b">2 VOICES / 1 STORY</div>
-            {/* A local brand asset; keeping it native avoids a vinext/next-image hydration mismatch. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/t2fm-characters-detailed.png" alt="TIANYU2FM 两位主播人物插画" width="512" height="378" />
+        <div className="hero-copy">
+          <p className="eyebrow"><span /> OPEN-SOURCE PODCAST TOOLKIT</p>
+          <h1>把一场对谈，<em>变成一套内容系统。</em></h1>
+          <p className="hero-lede">从嘉宾研究、问题设计，到高光筛选、视频粗剪、B-roll 与标题生成。</p>
+          <div className="hero-actions">
+            <a className="primary-button" href="#skills">浏览全部 Skills ↓</a>
+            <a className="text-link" href={repoUrl} target="_blank" rel="noreferrer">GitHub 公开仓库 ↗</a>
           </div>
         </div>
         <div className="hero-stats" aria-label="项目摘要">
-          <div><strong>05</strong><span>PRODUCTION SKILLS</span></div>
-          <div><strong>01</strong><span>END-TO-END SYSTEM</span></div>
-          <div><strong>100%</strong><span>PUBLIC SOURCE</span></div>
-          <div className="waveform" aria-hidden="true">
-            {[18, 38, 64, 30, 80, 46, 92, 54, 28, 70, 44, 22, 58, 34, 76, 42, 20].map((height, i) => <i key={i} style={{ height: `${height}%` }} />)}
-          </div>
+          <div><strong>05</strong><span>个生产工具</span></div>
+          <div><strong>01</strong><span>条完整工作流</span></div>
+          <div><strong>OPEN</strong><span>全部公开源码</span></div>
         </div>
       </section>
 
