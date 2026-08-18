@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const repoUrl = "https://github.com/jackli0508-ship-it/tianyu2fm-skills";
 
 const skills = [
@@ -108,7 +106,9 @@ export default function Home() {
             <div className="orbit orbit-one" /><div className="orbit orbit-two" />
             <div className="signal-label signal-a">REC · 00:48:16</div>
             <div className="signal-label signal-b">2 VOICES / 1 STORY</div>
-            <Image src="/t2fm-characters-detailed.png" alt="TIANYU2FM 两位主播人物插画" width={512} height={378} priority />
+            {/* A local brand asset; keeping it native avoids a vinext/next-image hydration mismatch. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/t2fm-characters-detailed.png" alt="TIANYU2FM 两位主播人物插画" width="512" height="378" />
           </div>
         </div>
         <div className="hero-stats" aria-label="项目摘要">
