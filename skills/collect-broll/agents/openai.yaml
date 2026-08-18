@@ -1,0 +1,4 @@
+interface:
+  display_name: "Collect B-roll"
+  short_description: "Search, download, deduplicate, and verify B-roll"
+  default_prompt: "Use $collect-broll to find, download, organize, and verify B-roll for these scenes."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "TIANYU2FM 播客标题生成器"
+  short_description: "完整读取稿件并调研双平台，输出 20 个主线和 10 个探索标题"
+  default_prompt: "使用 $tianyu2fm-title-generator 读取这期 transcript，调研 B 站和小红书后生成 20 个主线标题和 10 个 explorative 标题。"

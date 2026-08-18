@@ -1,0 +1,4 @@
+interface:
+  display_name: "FCP Multicam AutoCut"
+  short_description: "Auto-cut FCP multicam interviews and clean audio"
+  default_prompt: "Use $fcp-autocut-multicam to turn this multicam FCPXML into a speaker-directed edit with buffered reactions and recoverable disabled audio."

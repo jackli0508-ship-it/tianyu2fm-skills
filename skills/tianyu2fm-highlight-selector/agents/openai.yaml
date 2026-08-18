@@ -1,0 +1,4 @@
+interface:
+  display_name: "TIANYU2FM 高光时刻挑选器"
+  short_description: "通读带时间码的播客精剪稿，挑选十条可直接剪辑的片头高光金句"
+  default_prompt: "使用 $tianyu2fm-highlight-selector 从这期 transcript 中挑选 10 条带时间戳的片头高光金句。"

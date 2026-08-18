@@ -1,0 +1,4 @@
+interface:
+  display_name: "TIANYU2FM Scripter"
+  short_description: "结合嘉宾著作和既有提纲，生成有出处、可追问的播客深度问题"
+  default_prompt: "Use $tianyu2fm-scripter to research this guest’s works and expand my existing podcast outline with sourced questions."
