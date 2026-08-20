@@ -1,0 +1,4 @@
+interface:
+  display_name: "TIANYU2FM FCP Chapter Tool"
+  short_description: "为 TIANYU2FM 的 FCPXML 时间线识别并写入话题章节 block"
+  default_prompt: "使用 $tianyu2fm-fcp-chapter-tool 为这期节目识别话题段落，并输出带章节 block 的可导入 FCPXML。"

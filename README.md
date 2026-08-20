@@ -1,6 +1,6 @@
 # TIANYU2FM Skills
 
-TIANYU2FM 的开源播客内容生产工具箱：从嘉宾研究、提纲设计到高光筛选、视频粗剪、B-roll 搜集与标题生成。
+TIANYU2FM 的开源播客内容生产工具箱：从嘉宾研究、提纲设计到高光筛选、视频粗剪、章节标注、B-roll 搜集与标题生成。
 
 ## Skill Index
 
@@ -9,6 +9,7 @@ TIANYU2FM 的开源播客内容生产工具箱：从嘉宾研究、提纲设计�
 | 采访前 | [`tianyu2fm-scripter`](skills/tianyu2fm-scripter) | 研究嘉宾著作与一手资料，结合已有文稿生成有出处的延续性追问与核心观点转化问题。 |
 | 录制后 | [`tianyu2fm-highlight-selector`](skills/tianyu2fm-highlight-selector) | 从完整带时间码 transcript 中挑选忠于原话的片头高光金句。 |
 | 视频粗剪 | [`fcp-autocut-multicam`](skills/fcp-autocut-multicam) | 把双人 Final Cut Pro multicam FCPXML 转成可逆的说话人导向粗剪。 |
+| 章节标注 | [`tianyu2fm-fcp-chapter-tool`](skills/tianyu2fm-fcp-chapter-tool) | 理解完整对话结构，把问句式话题章节写成覆盖精剪时间线的 FCP title blocks。 |
 | 视觉补充 | [`collect-broll`](skills/collect-broll) | 搜索、筛选、下载、去重并验证真实网络 B-roll，保留完整来源记录。 |
 | 节目发布 | [`tianyu2fm-title-generator`](skills/tianyu2fm-title-generator) | 基于完整节目内容与平台调研，生成符合 TIANYU2FM 调性的中文标题。 |
 

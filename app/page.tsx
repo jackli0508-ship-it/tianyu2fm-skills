@@ -42,6 +42,19 @@ const skills = [
   },
   {
     index: "04",
+    phase: "VIDEO EDIT",
+    name: "TIANYU2FM FCP Chapter Tool",
+    slug: "tianyu2fm-fcp-chapter-tool",
+    tagline: "把一整期对谈的结构，直接写回 Final Cut Pro 时间线。",
+    summary: "完整理解带时间码对话，识别真正开启独立讨论的话题转折，并把问句式章节标题写成覆盖对应段落的 FCP title blocks。",
+    input: "Final Cut Pro 导出的 .fcpxml 或 .fcpxmld、完整节目时间线",
+    output: "带连续章节标题块的新 FCPXML、章节清单与 Apple DTD 验证结果",
+    owns: "全文转写、话题分段、标题提炼、精剪时间线映射与 FCPXML 验证",
+    notOwns: "覆盖源文件；把追问误判为新章节；直接修改 FCP Library",
+    signal: "TIMELINE → CHAPTERS",
+  },
+  {
+    index: "05",
     phase: "VISUAL STORY",
     name: "Collect B-roll",
     slug: "collect-broll",
@@ -54,7 +67,7 @@ const skills = [
     signal: "BRIEF → REAL FOOTAGE",
   },
   {
-    index: "05",
+    index: "06",
     phase: "PUBLISHING",
     name: "Title Generator",
     slug: "tianyu2fm-title-generator",
@@ -72,7 +85,7 @@ const workflow = [
   ["PREP", "提问", "Scripter"],
   ["TAPE", "录制", "Conversation"],
   ["FIND", "选金句", "Highlight"],
-  ["CUT", "剪画面", "AutoCut + B-roll"],
+  ["CUT", "剪画面", "AutoCut + Chapters + B-roll"],
   ["SHIP", "发布", "Title Generator"],
 ];
 
@@ -105,7 +118,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-stats" aria-label="项目摘要">
-          <div><strong>05</strong><span>个生产工具</span></div>
+          <div><strong>06</strong><span>个生产工具</span></div>
           <div><strong>01</strong><span>条完整工作流</span></div>
           <div><strong>OPEN</strong><span>全部公开源码</span></div>
         </div>
@@ -163,7 +176,7 @@ export default function Home() {
         <div className="recipes">
           <div><span>01 / 采访前</span><h3>“这位嘉宾，我还能问出什么新东西？”</h3><p>Scripter</p></div>
           <div><span>02 / 录完后</span><h3>“两个小时里，哪几句话最值得被听见？”</h3><p>Highlight Selector → Title Generator</p></div>
-          <div><span>03 / 做视频</span><h3>“先把粗剪成立，再让画面讲更多故事。”</h3><p>FCP AutoCut → Collect B-roll</p></div>
+          <div><span>03 / 做视频</span><h3>“先把粗剪成立，再让结构和画面都清楚。”</h3><p>FCP AutoCut → FCP Chapter Tool → Collect B-roll</p></div>
         </div>
       </section>
 
